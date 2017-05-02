@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--
+        	引入jquery文件
+        -->
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<!--
+        	引入当前游戏的主逻辑        	
+        -->
+		<script src="js/main.js"></script>
+		<!--
+        	引入当前游戏的样式文件
+        -->
+        <link rel="stylesheet" href="css/game.css" />
+		<title></title>
+	</head>
+	<body>
+		<!--
+        	当前游戏的非操作区：<header></header>
+        	*游戏标题：<h1>别踩白板儿</h1>
+        	*游戏计时：<div id="time_box"><span>0.000</span>秒</div>
+        		*<div>元素表示当前游戏计时元素
+        		*后面一定操作时间，利用<span>元素
+        -->
+		<header>
+			<h1>别踩白板儿</h1>
+			<div id="time_box"><span>0.000</span>秒</div>
+		</header>
+        <!--
+        	当前游戏的主操作区：
+        	*棋盘
+        	  *定义主操作区的容器:<div></div>
+        	  *定义操作区的方格：<div></div>
+        	    *使用<div>元素的id属性值分行和列
+        	      * 规则：
+        	        *grid-行-列
+        	        * 行和列都是从0开始
+        	      *例如第一行第一列： grid-0-0
+        -->
+        <div id="box_container">
+        	<div class="grid" id="grid-0-0"></div>
+        	<div class="grid"id="grid-0-1"></div>
+        	<div class="grid"id="grid-0-2"></div>
+        	<div class="grid"id="grid-1-0"></div>
+        	<div class="grid"id="grid-1-1"></div>
+        	<div class="grid"id="grid-1-2"></div>
+        	<div class="grid"id="grid-2-0"></div>
+        	<div class="grid"id="grid-2-1"></div>
+        	<div class="grid"id="grid-2-2"></div>
+        	<div class="grid"id="grid-3-0"></div>
+        	<div class="grid"id="grid-3-1"></div>
+        	<div class="grid"id="grid-3-2"></div>
+        </div>
+	</body>
+</html>
